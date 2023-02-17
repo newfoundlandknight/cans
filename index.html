@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+
+<link rel="stylesheet" href="index.css"> 
+<body>	
+ <!--  <input type ="text" pattern="[0-9]*" inputmode="numeric" > 
+ input pattern="\d*" type-->
+ <form method="post" action="">
+
+
+
+
+<div id="mydiv">
+  <div id="mydivheader">Click here to move</div>
+ 
+<h2>Canning Line Calculator</h2>
+<table width="640" border =1><tr><td colspan="2">
+  <table width="300">
+  <tr> <td colspan="3"> </td></tr>
+ <tr>
+	<td>can</td>
+<td></td>
+<td><input type="radio" id="s355" name="cansize" value=".355">
+<label for="s355">355</label><input type="radio" id="s473" name="cansize" value=".473" checked="yes" >
+<label for="s473">473</label></td>
+</tr>
+<tr>
+	<td>tube size</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" title= "tube_size" id ="tube_size" name="tube_size" value="580" ></td>
+</tr>
+<tr>
+	<td>cans per tiers</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" title= "tier_cans" id ="tier_cans" name="tier_cans" value ="390" ></td>
+</tr>
+ <tr> <td colspan="3"><center>consumables</center></td></tr>
+<tr>
+	<td>bbls</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" title= "bbls" id ="bbls" name="bbls" oninput="measureup(.473)" ><br></td>
+</tr>
+<tr>
+	<td>hl<br>
+</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="hls"></td>
+</tr>
+<tr>
+	<td>liters<br>
+</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="liters" oninput="measureup2()" ></td>
+ </tr>
+ <tr>
+	<td>cans<br>
+</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="cans"></td>
+ </tr>
+
+	<td>tiers<br>
+</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="tiers"></td>
+ </tr>
+   <tr>
+	<td>lids tubes<br>
+</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="lids"></td>
+ </tr>
+ <tr>
+ <tr>
+	<td>pallets<br></td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="pallets"></td>
+ </tr>
+   <tr>
+	<td>pallets 72's<br></td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="pallets_70"></td>
+ </tr> 
+  <tr>
+	<td>pallets 84's<br></td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="pallets2"></td>
+ </tr>
+ 
+ <tr>
+	<td>24's<br></td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s_24"></td>
+ </tr>
+ </table></td><td><table  width="300">
+ <tr> <td colspan="3"><center>time breakdown</center></td></tr>
+
+ <tr>
+	<td>average</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="savg"></td>
+ </tr>
+  <tr>
+	<td>24</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s24"></td>
+ </tr>
+  <tr>
+	<td>25</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s25"></td>
+ </tr>
+  <tr>
+	<td>26</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s26"></td>
+ </tr>
+  <tr>
+	<td>27</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s27"></td>
+ </tr>
+  <tr>
+	<td>28</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s28"></td>
+ </tr>
+<tr>
+	<td>29</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s29"></td>
+ </tr>
+ <tr>
+	<td>30</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s30"></td>
+ </tr>
+ <tr>
+	<td>31</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s31"></td>
+ </tr>
+ <tr>
+	<td>32</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s32"></td>
+ </tr>
+   <tr>
+	<td>33</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s33"></td>
+ </tr>
+  <tr>
+	<td>34</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s34"></td>
+ </tr>
+   <tr>
+	<td>35</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s35"></td>
+ </tr>
+    <tr>
+	<td>full run</td>
+	<td></td>
+	<td><input type ="text" pattern="[0-9]*" inputmode="numeric" id ="s36"></td>
+ </tr>
+ </table>
+</table>
+
+ </form>
+
+start time: <input type="text" id="start_time">
+<input type="submit" onclick="add_time()">
+<p id="demo"></p>
+<input type="submit" text ="test" >
+
+
+</div>
+
+<div id="testz" onclick="add_time()">
+	click for time
+</div>
+
+<script src="index.js"></script>
+<script src="cans.js"></script>
+ </body>
+</html>

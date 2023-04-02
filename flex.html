@@ -4,99 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jack Lanphear</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="flex.css">
     <style>
-* {
-  box-sizing: border-box;
-}
-        .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: left;
-        }
-        .flex-container > div {
-        background-color: blueviolet;
-        color: aliceblue;    
-        width:100px;
-        height:100%;
-        margin: 6px;  
-        padding: 20px;
-        border: 1px solid #030000;
-        border-radius: 10px;
-        box-shadow: 10px 10px 11px rgb(62, 2, 118);
-        flex:32%;
-        
 
-        }
-        .flex_1 {
-            position: relative;
-            background-image: url("./images/canoe.jpg");
-            /*clip-path: circle(60% at 50% 50%);*/
-            z-index:-1 ;
-            background-color: #ccc;
-            height: 500px;
-            background-position: right;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            
-        }
-        .flex_100{
-          background-color: rgb(210, 197, 223);
-        color: aliceblue;    
-        width:100%;
-        height:100%!important;
-        margin: 6px;  
-        padding: 20px;
-        border: 1px solid #030000;
-        border-radius: 10px;
-        box-shadow: 10px 10px 11px rgb(62, 2, 118);
-        flex:98%!important;
-
-        }
-
-#main_text {
-    text-transform: uppercase;
-    text-align: center;
-    font-display ;
-    color: #fff;
-    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
-    font-size: 3.4em;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%)
-  }
     </style>
 </head>
 <body>
     
     <nav>
         <ul class="menu">
-          <li class="logo"><img src="./images/paddle-white.png"><a href="#">Halifax canoe and kayak</a></li>
+          <li class="logo"><img src="./images/188222_19144845080_6583_n.jpg"><a href="#"><h2>Jack Lanphear</h2> FULL STACK DEVELOPER</a></li>
           <li class="item"><a href="#">Home</a></li>
-          <li class="item"><a href="index.html" target="iframe_a">About</a></li>
+          <li class="item"><a href="#">About</a></li>
           <li class="item has-submenu">
-            <a tabindex="0">Services</a>
+            <a tabindex="0">Projects PHP</a>
             <ul class="submenu">
-              <li class="subitem"><a href="#">Rentals</a></li>
-              <li class="subitem"><a href="#">Coaching</a></li>
+              <li class="subitem"><a href="#">PHP - Image generator</a></li>
+              <li class="subitem"><a href="#">PHP - API (NFL)</a></li>
+              <li class="subitem"><a href="#">NODE.JS - API server</a></li>
+              <li class="subitem"><a href="#">PHP - API (NFL)</a></li>
 
             </ul>
           </li>
-          <li class="item has-submenu">
+          <!-- <li class="item has-submenu">
             <a tabindex="0">Trips</a>
             <ul class="submenu">
               <li class="subitem"><a href="#">Halifax</a></li>
               <li class="subitem"><a href="#">Sydney</a></li>
               <li class="subitem"><a href="#">Canso</a></li>
             </ul>
-          </li>
+          </li> -->
           <!--<li class="item"><a href="#">Blog</a></li> -->
           <li class="item"><a href="#">Contact</a>
           </li>
@@ -105,13 +45,32 @@
           <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
- <div class="flex_1"><div id="main_text">Come Explore Canada </div></div>
+ <div id ="flex_1" class="flex_1"><div id="main_text">
+  <pre>
+  function timeConvert(minutes) {
+    var sign = minutes < 0 ? "-" : "";
+    var min = Math.floor(Math.abs(minutes));
+    var sec = Math.floor((Math.abs(minutes) * 60) % 60);
+      return sign + (min < 10 ? "0" : "") + min + ":" + (sec < 10 ? "0" : "") + sec;
+  }
+  
+  function getCheckedRadioValue(radioGroupName) {
+     var rads = document.getElementsByName(radioGroupName),
+         i;
+     for (i=0; i < rads.length; i++)
+        if (rads[i].checked)
+            return rads[i].value;
+     return null; // or undefined, or your preferred default for none checked
+  }
+</pre>
+ </div></div>
    <div class="flex-container">
-    <div class="flex_100">1111111</div>
-    <div>1111111</div>
-    <div>22222222222</div>
-    <div><iframe name ="iframe_a" src="blur.html" width="100%" height="300" style="border:none;">
+    <div class="flex_100">This flexbox takes up 98%<br>seems margins are not included in flex calculations even if you are using box-sizing: border-box;</div>
+    <div class="flex_100"><iframe name ="iframe_a" src="blur.html" width="100%" height="300" style="border:none;">
     </iframe></div>
+    <div id="width">Initially 32%</div>
+    <div>Initially 32%</div>
+    <div>Initially 32%</div>
      
 </div>    
 </body>

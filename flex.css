@@ -48,7 +48,7 @@
               /*clip-path: circle(60% at 50% 50%);*/
               z-index:-1 ;
               background-color: #ccc;
-              height: 200px;
+              height: 165px;
               background-position: right;
               background-repeat: no-repeat;
               background-size: cover;
@@ -76,7 +76,7 @@
       /* text-align: center; */
      
       color: #fff;
-      color:green;
+      /* color:green; */
       text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
       font-size: .6em;
       margin: 0;
@@ -205,9 +205,9 @@ header > span {
   @media all and (min-width: 700px) {
     #main_text {
       font-size: .80em;
-      color:rgb(238, 248, 124); /* */
+     /* color:rgb(227, 247, 6);  */
     }
-    .flex_1{height: 400px;}    
+    .flex_1{height: 250px;}    
     .logo {
         font-size: 15px!important;
     }
@@ -259,11 +259,11 @@ header > span {
       flex-wrap: nowrap;
       background: none;
     }   
-      
+    .flex_1{height: 250px;}  
     #main_text {
-      font-size: 1.25em;
-      color:red;
-      /* color:#0080ff; */
+      font-size: .9em;
+      /*  color:red;
+     color:#0080ff; */
     }
     .logo {
       order: 0;
